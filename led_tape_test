@@ -1,0 +1,6 @@
+1 'SOUND LEVEL
+10 O=ANA():R=10
+15 A=ANA()
+20 LC 16+(A-O)/R,23
+30 ?"*"
+40 GOTO15
