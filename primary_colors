@@ -1,0 +1,6 @@
+  10 CLV:OUT1,-1: OUT2,-1
+  20 CLS
+  30 R=ANA(2)/40: G=ANA(5)/20: B=ANA(6)/5
+  40 ?"R:";R;" G:";G;" B:";B:WAIT10
+  50 LET[0],G,R,B:WS.LED1,3
+  60 GOTO20
