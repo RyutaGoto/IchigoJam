@@ -1,0 +1,9 @@
+10 CLS:CLV:CLT:X=12
+20 K=INKEY()
+30 IF X<24 && K==77 D=1:GOTO45
+40 IF X>0 && K==90 D=-1 ELSE D=0
+45 X=X+D
+50 LC X,5:?" ---|--- "
+55 LC 1,1:?"ノコリ";15-(TICK()/60);"ビョウ "
+60 IF TICK()<600 GOTO20
+70 IF X<12 ?"ヒダリノカチ!!" ELSE IF 12<X ?"ミギノカチ!!" ELSE ?"ヒキワケ!"
